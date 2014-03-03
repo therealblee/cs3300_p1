@@ -15,11 +15,12 @@ with open(addresses) as f:
 		#format line into url
 		array = line.split(' ')
 		query = '+'.join(array)
-		url = GEOCODE_BASE_URL+query+"&sensor=false"
-		#make API call
+		url = GEOCODE_BASE_URL+query+"&sensor=false" #need sensor=false if not viewing on a mobile device
+		#make API call aka open url to the address and get a big ass json object.
 		result = simplejson.load(urllib.urlopen(url))
 		coords = 'lat:%f, lng:%f' %(result['results'][0]['geometry']['location']['lat'], result['results'][0]['geometry']['location']['lng'])
 		#write to fp2
-		fp2.write((line, coords))
+		#each line is supposed to be the address followed by lat, lng
+		fp2.write(line+" "+coords+"\n")
 
 fp2.close()
