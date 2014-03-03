@@ -18,12 +18,21 @@ def retrieve_cities(state):
 	content = urllib2.urlopen(html).read()
 	soup = BeautifulSoup(content)
 
+	html2 = "http://www.mystore411.com/store/list_state/3/" + state + "/Walmart-store-locations?page=2&"	
+	content2 = urllib2.urlopen(html2).read()
+	soup2 = BeautifulSoup(content2)
+
 	first_table = soup.table
 	cities = []
 	for n in first_table.find_all('a'):
 		if n.parent.name == 'td':	
 			cities.append(replace_space(n.string,'cities'))
 	
+	second_table = soup2.table
+	for n in second_table.find_all('a'):
+		if n.parent.name == 'td':
+			cities.append(replace_space(n.string,'cities'))
+
 	return cities
 
 def replace_space(s1,purpose):
@@ -49,10 +58,6 @@ for n in states_list:
 	if n == 'California':
 		cities = retrieve_cities(n)
 
-multiplePages = False
-# check if there is more than one page
-if len(soup.find_all("a","prev_link")) > 1:
-	multiplePages = True
 
 addresses = []
 addresses_json = []
