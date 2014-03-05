@@ -1,0 +1,87 @@
+<html>
+<head>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<!-- This library supports geographic data -->
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+	<!-- Leave a target where we'll add a map of the world -->
+	<div id="map"></div>
+    
+    <div id="legend">
+        <table>
+            <tr>
+                <td id="test"></td><td>Walmarts</td>
+            </tr>
+            <tr>
+                <td id="test2"></td><td>Whole Foods</td>
+            </tr>
+        </table>
+    </div>
+
+	<script>
+    //Key
+    var x = d3.scale.linear()
+        .domain([0, 1])
+        .range([0, 240]);
+        
+    //Legend
+    var svgSize = 30;
+	var test = d3.select("#test").append("svg").attr("width", svgSize).attr("height", svgSize);
+        test.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "blue");
+	var test2 = d3.select("#test2").append("svg").attr("width", svgSize).attr("height", svgSize);
+        test2.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "green");
+    
+    //Map
+	var width = 600;
+	var height = 800;
+	
+        
+	var projection = d3.geo.albers().scale(3300)
+    .translate([width*2, height/2]);
+
+        
+    var path = d3.geo.path().projection(projection);
+     
+	var svg = d3.select("#map").append("svg")
+	.attr("width", width)
+	.attr("height", height);
+	
+
+	var calimap;
+	
+	// We can use our projection as a function. Remember that the format is 
+	//  longitude first, then latitude (ie x, then y)
+	var losangelas = projection([-117.9095329, 34.1027076]);
+	
+	d3.json("ca-counties.json", function (error, ca) {
+		calimap = ca;
+		svg.append("g")
+		.selectAll("path")
+		.data(topojson.feature(ca, ca.objects.counties).features)
+		.enter().append("path")
+		.attr("d", path)
+		.style("stroke", "#888888")
+		// Make Orange County appear Cornell red.
+		.style("fill", function (county) { if (county.id == 06059) {  return "#ff0000"; } else { return "#cccccc"; }});
+		
+		// Place a big semi-transparent circle over Los Angelas.
+		svg.append("circle").attr("cx", losangelas[0]).attr("cy", losangelas[1]).attr("r", 2).attr("fill", "blue");
+
+	});
+	</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+#map {
+    border: 1px solid black;
+    float: left;
+}
+
+#legend {
+    border: 1px solid black;
+    float: left;
+    margin: 30px;
+}
+
+#legend td {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+svg { border: solid black 1px; }
