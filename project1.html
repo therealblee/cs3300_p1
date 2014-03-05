@@ -3,18 +3,41 @@
 	<script src="http://d3js.org/d3.v3.min.js"></script>
 	<!-- This library supports geographic data -->
 	<script src="http://d3js.org/topojson.v1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
 <body>
 	<!-- Leave a target where we'll add a map of the world -->
 	<div id="map"></div>
+    
+    <div id="legend">
+        <table>
+            <tr>
+                <td id="test"></td><td>Walmarts</td>
+            </tr>
+            <tr>
+                <td id="test2"></td><td>Whole Foods</td>
+            </tr>
+        </table>
+    </div>
 
 	<script>
-	//  This is a modification of http://bl.ocks.org/mbostock/4060606
+    //Key
+    var x = d3.scale.linear()
+        .domain([0, 1])
+        .range([0, 240]);
+        
+    //Legend
+    var svgSize = 30;
+	var test = d3.select("#test").append("svg").attr("width", svgSize).attr("height", svgSize);
+        test.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "blue");
+	var test2 = d3.select("#test2").append("svg").attr("width", svgSize).attr("height", svgSize);
+        test2.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "green");
+    
+    //Map
+	var width = 1200;
+	var height = 700;
 	
-	var width = 1000;
-	var height = 1000;
-	
-	var projection = d3.geo.albersUsa();
+	var projection = d3.geo.albersUsa().scale(1).translate([0,0]);
 	
 	var path = d3.geo.path().projection(projection);
 	
@@ -28,7 +51,7 @@
 	//  longitude first, then latitude (ie x, then y)
 	var losangelas = projection([-118.25, 34.05]);
 	
-	d3.json("ca-counties.json", function (error, us) {
+	d3.json("us.json", function (error, us) {
 		mapData = us;
 		svg.append("g")
 		.selectAll("path")
