@@ -1,7 +1,7 @@
 import urllib2
 from urllib2 import urlopen
 import json
-f = open('streets.txt')
+f = open('streets_wholefoods.txt')
 lines = f.readlines()
 
 coords = []
@@ -22,6 +22,6 @@ for line in lines:
 #print coords
 f.close()
 
-f2 = open("coords.txt", "w+")
+f2 = open("coords_wholefoods.json", "w+")
 f2.write(json.dumps(coords))
 f2.close()
