@@ -1,0 +1,1263 @@
+[
+      
+      {
+        "address": "7011 Main St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1288-California.html",
+          "city": "American Canyon"
+        }
+      },
+      {
+        "address": "440 N Euclid St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1911-California.html",
+          "city": "Anaheim"
+        }
+      },
+      {
+        "address": "88 E Orangethorpe Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4614-California.html",
+          "city": "Anaheim"
+        }
+      },
+      {
+        "address": "5000 Rhonda Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4699-California.html",
+          "city": "Anderson"
+        }
+      },
+      {
+        "address": "7901 Watt Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2300-California.html",
+          "city": "Antelope"
+        }
+      },
+      {
+        "address": "4893 Lone Tree Way",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4681-California.html",
+          "city": "Antioch"
+        }
+      },
+      {
+        "address": "20251 Hwy 18",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1888-California.html",
+          "city": "Apple Valley"
+        }
+      },
+      {
+        "address": "1168 W Branch St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4664-California.html",
+          "city": "Arroyo Grande"
+        }
+      },
+      {
+        "address": "800 Commerce Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4667-California.html",
+          "city": "Atwater"
+        }
+      },
+      {
+        "address": "2601 Fashion Pl",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1326-California.html",
+          "city": "Bakersfield"
+        }
+      },
+      {
+        "address": "6225 Colony St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1235-California.html",
+          "city": "Bakersfield"
+        }
+      },
+      {
+        "address": "8400 Rosedale Hwy",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4662-California.html",
+          "city": "Bakersfield"
+        }
+      },
+      {
+        "address": "5075 Gosford Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4663-California.html",
+          "city": "Bakersfield"
+        }
+      },
+      {
+        "address": "3250 Big Dalton Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4604-California.html",
+          "city": "Baldwin Park"
+        }
+      },
+      {
+        "address": "621 Montara Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2155-California.html",
+          "city": "Barstow"
+        }
+      },
+      {
+        "address": "1540 E 2Nd St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4650-California.html",
+          "city": "Beaumont"
+        }
+      },
+      {
+        "address": "250 Wildcat Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4652-California.html",
+          "city": "Brawley"
+        }
+      },
+      {
+        "address": "2595 E Imperial Hwy",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4616-California.html",
+          "city": "Brea"
+        }
+      },
+      {
+        "address": "8450 La Palma Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4598-California.html",
+          "city": "Buena Park"
+        }
+      },
+      {
+        "address": "2540 Rockwood Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1598-California.html",
+          "city": "Calexico"
+        }
+      },
+      {
+        "address": "1670 Mitchell Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2097-California.html",
+          "city": "Ceres"
+        }
+      },
+      {
+        "address": "12701 Towne Center Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2068-California.html",
+          "city": "Cerritos"
+        }
+      },
+      {
+        "address": "2044 Forest Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1962-California.html",
+          "city": "Chico"
+        }
+      },
+      {
+        "address": "3943 Grand Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4617-California.html",
+          "city": "Chino"
+        }
+      },
+      {
+        "address": "1150 Broadway",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4633-California.html",
+          "city": "Chula Vista"
+        }
+      },
+      {
+        "address": "75 N Broadway",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2124-California.html",
+          "city": "Chula Vista"
+        }
+      },
+      {
+        "address": "1360 Eastlake Pkwy",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4640-California.html",
+          "city": "Chula Vista"
+        }
+      },
+      {
+        "address": "7010 Auburn Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4692-California.html",
+          "city": "Citrus Heights"
+        }
+      },
+      {
+        "address": "17150 Gale Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2190-California.html",
+          "city": "City Of Industry"
+        }
+      },
+      {
+        "address": "15960 Dam Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2139-California.html",
+          "city": "Clearlake"
+        }
+      },
+      {
+        "address": "323 W Shaw Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2222-California.html",
+          "city": "Clovis"
+        }
+      },
+      {
+        "address": "1120 S Mount Vernon Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1346-California.html",
+          "city": "Colton"
+        }
+      },
+      {
+        "address": "479 N Mckinley St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2183-California.html",
+          "city": "Corona"
+        }
+      },
+      {
+        "address": "1290 E Ontario Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4626-California.html",
+          "city": "Corona"
+        }
+      },
+      {
+        "address": "1275 N Azusa Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1897-California.html",
+          "city": "Covina"
+        }
+      },
+      {
+        "address": "900 E Washington Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1966-California.html",
+          "city": "Crescent City"
+        }
+      },
+      {
+        "address": "770 W El Monte Way",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4656-California.html",
+          "city": "Dinuba"
+        }
+      },
+      {
+        "address": "235 E Dorset Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4686-California.html",
+          "city": "Dixon"
+        }
+      },
+      {
+        "address": "1600 Mountain Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2244-California.html",
+          "city": "Duarte"
+        }
+      },
+      {
+        "address": "13487 Camino Canada",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1859-California.html",
+          "city": "El Cajon"
+        }
+      },
+      {
+        "address": "605 Fletcher Pkwy",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4635-California.html",
+          "city": "El Cajon"
+        }
+      },
+      {
+        "address": "2150 N Waterman Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1730-California.html",
+          "city": "El Centro"
+        }
+      },
+      {
+        "address": "8465 Elk Grove Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1757-California.html",
+          "city": "Elk Grove"
+        }
+      },
+      {
+        "address": "2701 N Texas St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1893-California.html",
+          "city": "Fairfield"
+        }
+      },
+      {
+        "address": "1018 Riley St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1306-California.html",
+          "city": "Folsom"
+        }
+      },
+      {
+        "address": "17251 Foothill Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1182-California.html",
+          "city": "Fontana"
+        }
+      },
+      {
+        "address": "26502 Towne Centre Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1873-California.html",
+          "city": "Foothill Ranch"
+        }
+      },
+      {
+        "address": "40580 Albrae St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4674-California.html",
+          "city": "Fremont"
+        }
+      },
+      {
+        "address": "44009 Osgood Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4682-California.html",
+          "city": "Fremont"
+        }
+      },
+      {
+        "address": "4080 W Shaw Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1526-California.html",
+          "city": "Fresno"
+        }
+      },
+      {
+        "address": "5125 E Kings Canyon Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2307-California.html",
+          "city": "Fresno"
+        }
+      },
+      {
+        "address": "7065 N Ingram Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4657-California.html",
+          "city": "Fresno"
+        }
+      },
+      {
+        "address": "7150 Camino Arroyo",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1993-California.html",
+          "city": "Gilroy"
+        }
+      },
+      {
+        "address": "1950 Auto Center Drive",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2025-California.html",
+          "city": "Glendora"
+        }
+      },
+      {
+        "address": "250 S 12Th Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1560-California.html",
+          "city": "Hanford"
+        }
+      },
+      {
+        "address": "1231 S Sanderson Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1806-California.html",
+          "city": "Hemet"
+        }
+      },
+      {
+        "address": "4210 Highland Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2286-California.html",
+          "city": "Highland"
+        }
+      },
+      {
+        "address": "8230 Talbert Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4612-California.html",
+          "city": "Huntington Beach"
+        }
+      },
+      {
+        "address": "10355 Wicklow Way",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1939-California.html",
+          "city": "Jackson"
+        }
+      },
+      {
+        "address": "1340 S Beach Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4599-California.html",
+          "city": "La Habra"
+        }
+      },
+      {
+        "address": "5500 Grossmont Center Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4638-California.html",
+          "city": "La Mesa"
+        }
+      },
+      {
+        "address": "79295 Us Hwy 111",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1776-California.html",
+          "city": "La Quinta"
+        }
+      },
+      {
+        "address": "27470 Alicia Pkwy",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1974-California.html",
+          "city": "Laguna Niguel"
+        }
+      },
+      {
+        "address": "31700 Grape St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1969-California.html",
+          "city": "Lake Elsinore"
+        }
+      },
+      {
+        "address": "2770 Carson St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4606-California.html",
+          "city": "Lakewood"
+        }
+      },
+      {
+        "address": "44665 Valley Central Way",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1692-California.html",
+          "city": "Lancaster"
+        }
+      },
+      {
+        "address": "1731 E Avenue J",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4625-California.html",
+          "city": "Lancaster"
+        }
+      },
+      {
+        "address": "2700 Las Positas Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2079-California.html",
+          "city": "Livermore"
+        }
+      },
+      {
+        "address": "2350 W Kettleman Ln",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1766-California.html",
+          "city": "Lodi"
+        }
+      },
+      {
+        "address": "701 W Central Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1999-California.html",
+          "city": "Lompoc"
+        }
+      },
+      {
+        "address": "7250 Carson Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4601-California.html",
+          "city": "Long Beach"
+        }
+      },
+      {
+        "address": "151 E 5Th St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4602-California.html",
+          "city": "Long Beach"
+        }
+      },
+      {
+        "address": "4101 Crenshaw Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4611-California.html",
+          "city": "Los Angeles"
+        }
+      },
+      {
+        "address": "1575 W Pacheco Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2100-California.html",
+          "city": "Los Banos"
+        }
+      },
+      {
+        "address": "1977 W Cleveland Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1164-California.html",
+          "city": "Madera"
+        }
+      },
+      {
+        "address": "1205 S Main St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1313-California.html",
+          "city": "Manteca"
+        }
+      },
+      {
+        "address": "150 Beach Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4672-California.html",
+          "city": "Marina"
+        }
+      },
+      {
+        "address": "1021 Arnold Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4677-California.html",
+          "city": "Martinez"
+        }
+      },
+      {
+        "address": "1131 N Beale Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4696-California.html",
+          "city": "Marysville"
+        }
+      },
+      {
+        "address": "3055 Loughborough Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2325-California.html",
+          "city": "Merced"
+        }
+      },
+      {
+        "address": "301 Ranch Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2189-California.html",
+          "city": "Milpitas"
+        }
+      },
+      {
+        "address": "2225 Plaza Pkwy",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1420-California.html",
+          "city": "Modesto"
+        }
+      },
+      {
+        "address": "3848 Mchenry Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4666-California.html",
+          "city": "Modesto"
+        }
+      },
+      {
+        "address": "12721 Moreno Beach Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4628-California.html",
+          "city": "Moreno Valley"
+        }
+      },
+      {
+        "address": "170 Cochrane Plz",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4669-California.html",
+          "city": "Morgan Hill"
+        }
+      },
+      {
+        "address": "600 Showers Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2157-California.html",
+          "city": "Mountain View"
+        }
+      },
+      {
+        "address": "41200 Murrieta Hot Springs Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4644-California.html",
+          "city": "Murrieta"
+        }
+      },
+      {
+        "address": "681 Lincoln Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4684-California.html",
+          "city": "Napa"
+        }
+      },
+      {
+        "address": "1200 Highland Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4639-California.html",
+          "city": "National City"
+        }
+      },
+      {
+        "address": "11729 Imperial Hwy",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4608-California.html",
+          "city": "Norwalk"
+        }
+      },
+      {
+        "address": "8400 Edgewater Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4676-California.html",
+          "city": "Oakland"
+        }
+      },
+      {
+        "address": "705 College Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2142-California.html",
+          "city": "Oceanside"
+        }
+      },
+      {
+        "address": "2100 Vista Way",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2301-California.html",
+          "city": "Oceanside"
+        }
+      },
+      {
+        "address": "3405 Marron Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4637-California.html",
+          "city": "Oceanside"
+        }
+      },
+      {
+        "address": "2300 N Tustin St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4615-California.html",
+          "city": "Orange"
+        }
+      },
+      {
+        "address": "8961 Greenback Ln",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4689-California.html",
+          "city": "Orangevale"
+        }
+      },
+      {
+        "address": "355 Oro Dam Blvd E",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1546-California.html",
+          "city": "Oroville"
+        }
+      },
+      {
+        "address": "2001 N Rose Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1924-California.html",
+          "city": "Oxnard"
+        }
+      },
+      {
+        "address": "34500 Monterey Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1662-California.html",
+          "city": "Palm Desert"
+        }
+      },
+      {
+        "address": "5601 E Ramon Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4649-California.html",
+          "city": "Palm Springs"
+        }
+      },
+      {
+        "address": "40130 10Th St W",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1517-California.html",
+          "city": "Palmdale"
+        }
+      },
+      {
+        "address": "37140 47Th St E",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4624-California.html",
+          "city": "Palmdale"
+        }
+      },
+      {
+        "address": "8333 Van Nuys Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4597-California.html",
+          "city": "Panorama City"
+        }
+      },
+      {
+        "address": "14501 Lakewood Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2185-California.html",
+          "city": "Paramount"
+        }
+      },
+      {
+        "address": "180 Niblick Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2258-California.html",
+          "city": "Paso Robles"
+        }
+      },
+      {
+        "address": "2560 N Perris Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1156-California.html",
+          "city": "Perris"
+        }
+      },
+      {
+        "address": "8500 Washington Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4603-California.html",
+          "city": "Pico Rivera"
+        }
+      },
+      {
+        "address": "2203 Loveridge Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1588-California.html",
+          "city": "Pittsburg"
+        }
+      },
+      {
+        "address": "4300 Missouri Flat Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2311-California.html",
+          "city": "Placerville"
+        }
+      },
+      {
+        "address": "4501 Rosewood Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2144-California.html",
+          "city": "Pleasanton"
+        }
+      },
+      {
+        "address": "80 Rio Rancho Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1831-California.html",
+          "city": "Pomona"
+        }
+      },
+      {
+        "address": "19821 Rinaldi St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4609-California.html",
+          "city": "Porter Ranch"
+        }
+      },
+      {
+        "address": "1250 W Henderson Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2172-California.html",
+          "city": "Porterville"
+        }
+      },
+      {
+        "address": "13425 Community Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1663-California.html",
+          "city": "Poway"
+        }
+      },
+      {
+        "address": "10655 Folsom Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2147-California.html",
+          "city": "Rancho Cordova"
+        }
+      },
+      {
+        "address": "12549 Foothill Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1857-California.html",
+          "city": "Rancho Cucamonga"
+        }
+      },
+      {
+        "address": "1025 S Main St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1700-California.html",
+          "city": "Red Bluff"
+        }
+      },
+      {
+        "address": "1515 Dana Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4700-California.html",
+          "city": "Redding"
+        }
+      },
+      {
+        "address": "2050 W Redlands Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1599-California.html",
+          "city": "Redlands"
+        }
+      },
+      {
+        "address": "1610 S Riverside Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1190-California.html",
+          "city": "Rialto"
+        }
+      },
+      {
+        "address": "1400 Hilltop Mall Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4678-California.html",
+          "city": "Richmond"
+        }
+      },
+      {
+        "address": "911 S China Lake Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1659-California.html",
+          "city": "Ridgecrest"
+        }
+      },
+      {
+        "address": "2663 Canyon Springs Pkwy Reloc",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2201-California.html",
+          "city": "Riverside"
+        }
+      },
+      {
+        "address": "5200 Van Buren Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2224-California.html",
+          "city": "Riverside"
+        }
+      },
+      {
+        "address": "4625 Redwood Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1532-California.html",
+          "city": "Rohnert Park"
+        }
+      },
+      {
+        "address": "1827 Walnut Grove Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4605-California.html",
+          "city": "Rosemead"
+        }
+      },
+      {
+        "address": "900 Pleasant Grove Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2273-California.html",
+          "city": "Roseville"
+        }
+      },
+      {
+        "address": "1400 Lead Hill Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4697-California.html",
+          "city": "Roseville"
+        }
+      },
+      {
+        "address": "3661 Truxel Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4691-California.html",
+          "city": "Sacramento"
+        }
+      },
+      {
+        "address": "3460 El Camino Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4693-California.html",
+          "city": "Sacramento"
+        }
+      },
+      {
+        "address": "6051 Florin Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4694-California.html",
+          "city": "Sacramento"
+        }
+      },
+      {
+        "address": "5821 Antelope Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4695-California.html",
+          "city": "Sacramento"
+        }
+      },
+      {
+        "address": "1375 N Davis Rd.",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1902-California.html",
+          "city": "Salinas"
+        }
+      },
+      {
+        "address": "1800 N Main",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4671-California.html",
+          "city": "Salinas"
+        }
+      },
+      {
+        "address": "4001 Hallmark Pkwy",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4631-California.html",
+          "city": "San Bernardino"
+        }
+      },
+      {
+        "address": "951 Avenida Pico",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4645-California.html",
+          "city": "San Clemente"
+        }
+      },
+      {
+        "address": "3382 Murphy Canyon Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1981-California.html",
+          "city": "San Diego"
+        }
+      },
+      {
+        "address": "710 Dennery Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2031-California.html",
+          "city": "San Diego"
+        }
+      },
+      {
+        "address": "3412 College Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2156-California.html",
+          "city": "San Diego"
+        }
+      },
+      {
+        "address": "4840 Shawline St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4636-California.html",
+          "city": "San Diego"
+        }
+      },
+      {
+        "address": "1861 S San Jacinto Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4648-California.html",
+          "city": "San Jacinto"
+        }
+      },
+      {
+        "address": "777 Story Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4670-California.html",
+          "city": "San Jose"
+        }
+      },
+      {
+        "address": "5502 Monterey Hwy",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4673-California.html",
+          "city": "San Jose"
+        }
+      },
+      {
+        "address": "1919 Davis St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4679-California.html",
+          "city": "San Leandro"
+        }
+      },
+      {
+        "address": "15555 Hesperian Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4680-California.html",
+          "city": "San Leandro"
+        }
+      },
+      {
+        "address": "732 Center Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4641-California.html",
+          "city": "San Marcos"
+        }
+      },
+      {
+        "address": "2761 Jensen Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4659-California.html",
+          "city": "Sanger"
+        }
+      },
+      {
+        "address": "3600 W Mcfadden Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4613-California.html",
+          "city": "Santa Ana"
+        }
+      },
+      {
+        "address": "26471 Carl Boyer Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4618-California.html",
+          "city": "Santa Clarita"
+        }
+      },
+      {
+        "address": "27931 Kelly Johnson Pkwy",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4622-California.html",
+          "city": "Santa Clarita"
+        }
+      },
+      {
+        "address": "13310 Telegraph Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4600-California.html",
+          "city": "Santa Fe Springs"
+        }
+      },
+      {
+        "address": "2220 S Bradley Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4665-California.html",
+          "city": "Santa Maria"
+        }
+      },
+      {
+        "address": "170 Town Center Pkwy",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1912-California.html",
+          "city": "Santee"
+        }
+      },
+      {
+        "address": "3400 Floral Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2167-California.html",
+          "city": "Selma"
+        }
+      },
+      {
+        "address": "255 Cochran St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4620-California.html",
+          "city": "Simi Valley"
+        }
+      },
+      {
+        "address": "1101 Sanguinetti Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1894-California.html",
+          "city": "Sonora"
+        }
+      },
+      {
+        "address": "25450 The Old Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1819-California.html",
+          "city": "Stevenson Ranch"
+        }
+      },
+      {
+        "address": "3223 E Hammer Ln",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1618-California.html",
+          "city": "Stockton"
+        }
+      },
+      {
+        "address": "2900 Main St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1351-California.html",
+          "city": "Susanville"
+        }
+      },
+      {
+        "address": "32225 Temecula Pkwy",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4642-California.html",
+          "city": "Temecula"
+        }
+      },
+      {
+        "address": "19503 Normandie Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4607-California.html",
+          "city": "Torrance"
+        }
+      },
+      {
+        "address": "3010 W Grant Line Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1904-California.html",
+          "city": "Tracy"
+        }
+      },
+      {
+        "address": "1110 E Prosperity Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4658-California.html",
+          "city": "Tulare"
+        }
+      },
+      {
+        "address": "2111 Fulkerth Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2261-California.html",
+          "city": "Turlock"
+        }
+      },
+      {
+        "address": "1155 Airport Park Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2118-California.html",
+          "city": "Ukiah"
+        }
+      },
+      {
+        "address": "30600 Dyer St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2121-California.html",
+          "city": "Union City"
+        }
+      },
+      {
+        "address": "1540 W Foothill Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1827-California.html",
+          "city": "Upland"
+        }
+      },
+      {
+        "address": "1501 Helen Power Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1538-California.html",
+          "city": "Vacaville"
+        }
+      },
+      {
+        "address": "15272 Bear Valley Rd Relocatio",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1460-California.html",
+          "city": "Victorville"
+        }
+      },
+      {
+        "address": "1819 E Noble Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1263-California.html",
+          "city": "Visalia"
+        }
+      },
+      {
+        "address": "1800 University Dr",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2151-California.html",
+          "city": "Vista"
+        }
+      },
+      {
+        "address": "6433 Fallbrook Ave",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4610-California.html",
+          "city": "West Hills"
+        }
+      },
+      {
+        "address": "755 Riverpoint Ct",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4688-California.html",
+          "city": "West Sacramento"
+        }
+      },
+      {
+        "address": "13331 Beach Blvd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2061-California.html",
+          "city": "Westminster"
+        }
+      },
+      {
+        "address": "470 N Airport Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1994-California.html",
+          "city": "Willows"
+        }
+      },
+      {
+        "address": "6650 Hembree Ln",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/4685-California.html",
+          "city": "Windsor"
+        }
+      },
+      {
+        "address": "1720 E Main St",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2026-California.html",
+          "city": "Woodland"
+        }
+      },
+      {
+        "address": "1906 Fort Jones Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1573-California.html",
+          "city": "Yreka"
+        }
+      },
+      {
+        "address": "1150 Harter Rd",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/1995-California.html",
+          "city": "Yuba City"
+        }
+      },
+      {
+        "address": "57980 29 Palms Hwy",
+        "property2": {
+          "href": "http://www.luauh.com/walmart_locations/2285-California.html",
+          "city": "Yucca Valley"
+        }
+      }
+    ]
