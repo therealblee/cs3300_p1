@@ -1,0 +1,59 @@
+<html>
+<head>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<!-- This library supports geographic data -->
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
+</head>
+<body>
+	<!-- Leave a target where we'll add a map of the world -->
+	<div id="map"></div>
+
+	<script>
+	//  This is a modification of http://bl.ocks.org/mbostock/4060606
+	
+	var width = 1000;
+	var height = 1000;
+	
+	var projection = d3.geo.albersUsa();
+	
+	var path = d3.geo.path().projection(projection);
+	
+	var svg = d3.select("#map").append("svg")
+	.attr("width", width)
+	.attr("height", height);
+	
+	var mapData;
+	
+	// We can use our projection as a function. Remember that the format is 
+	//  longitude first, then latitude (ie x, then y)
+	var losangelas = projection([-118.25, 34.05]);
+	
+	d3.json("ca-counties.json", function (error, us) {
+		mapData = us;
+		svg.append("g")
+		.selectAll("path")
+		.data(topojson.feature(us, us.objects.counties).features)
+		.enter().append("path")
+		.attr("d", path)
+		.style("stroke", "#888888")
+		// Make Orange County appear Cornell red.
+		.style("fill", function (county) { if (county.id == 06059) {  return "#ff0000"; } else { return "#cccccc"; }});
+		
+		// Place a big semi-transparent circle over Los Angelas.
+		svg.append("circle").attr("cx", losangelas[0]).attr("cy", losangelas[1]).attr("r", 2).attr("fill", "blue");
+	});
+	</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
