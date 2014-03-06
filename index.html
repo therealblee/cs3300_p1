@@ -20,14 +20,7 @@
         </table>
     </div>
 
-	<script>
-    // TODO: pull in income data for coloring map and creating key
-    var incomes;
-        
-    d3.json("median_income.json", function(data) {
-        incomes = data;
-    });
-        
+	<script>            
     // [START Key] with help from the man: mbostock http://bl.ocks.org/mbostock/4573883
     var keyContainerWidth = 500;
     var keyContainerHeight = 100;
@@ -50,9 +43,8 @@
         .domain([30000, 35000, 42000, 52000, 59000, 74000, 89605])
         .range(["#ffffcc","#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#005a32"]);
     
-    // Use min/max income to create a scale for the key
     var x = d3.scale.linear()
-        .domain([30000, 89605])
+        .domain([30000, 89605]) // domain from the income data
         .range([keyPadding, keyContainerWidth-keyPadding]);
     
     // Create key scaling income values with a linear scale, set tick marks with the threshold
@@ -131,6 +123,20 @@
 
 	});
     // [END map]
+    
+    // [START map filling]
+    
+    // TODO: pull in income data for coloring map
+    d3.json("median_income.json", function(error, incomes) {
+        var brackets = threshold.domain();
+        var colors = threshold.range();
+        
+        incomes.forEach(function(county) {
+            console.log(county);
+        });
+    });
+        
+    // [END map filling]
 	</script>
 </body>
 
