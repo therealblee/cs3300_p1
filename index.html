@@ -21,32 +21,42 @@
     </div>
 
 	<script>
-    //Key
-    
-    
-    //Key split up by US income brackets http://en.wikipedia.org/wiki/File:US_county_household_median_income_2012.png
+    // START Key code
+    var keyWidth = 400;
+    var keyHeight = 100;
+
+    var svg = d3.select("body").append("svg")
+        .attr("class", "keyContainer")
+        .attr("width", keyWidth)
+        .attr("height", keyHeight);
+
+    // TODO: Need to reformat tick marks
+    var format = d3.format("$");
+        
+    // TODO: Pull in income data to determine domain of key
+        
+    // Threshold scale split up by US income brackets http://en.wikipedia.org/wiki/File:US_county_household_median_income_2012.png
     var threshold = d3.scale.threshold()
         .domain([35000, 42000, 52000, 59000, 74000])
-        .range(["#ffffcc","#c2e699","#78c679","#31a354","#006837"]);
-        
-    var x = d3.scale.linear()
-        .domain([21, 74])
-        .range([0, 240]);
+        .range(["#ffffcc","#d9f0a3","#addd8e","#78c679","#31a354","#006837"]);
     
+    // Use min/max income to create a scale for the key
+    var x = d3.scale.linear()
+        .domain([30000, 89605])
+        .range([0, keyWidth]);
+    
+    // Create key scaling income values with a linear scale, color in and set tick marks with the threshold
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
         .tickSize(20)
         .tickValues(threshold.domain())
-        
-    var svg = d3.select("body").append("svg")
-        .attr("width", 250)
-        .attr("height", 100);
-        
+        .tickFormat(function(d) { return format(d/1000)+"K"; });
+    
+    // Append 
     var g = svg.append("g")
         .attr("class", "key")
-        .attr("transform", "translate(" + (width - 240) / 2 + "," + height / 2 + ")");
-
+    
     g.selectAll("rect")
         .data(threshold.range().map(function(color) {
           var d = threshold.invertExtent(color);
@@ -64,30 +74,30 @@
     g.call(xAxis).append("text")
         .attr("class", "caption")
         .attr("y", 10)
-        .text("Percentage of stops that involved force");
-    
-    //Legend
+        .text("US 2012 Income Brackets");
+        
+    // END key code
+        
+    // START legend code
     var svgSize = 30;
 	var test = d3.select("#test").append("svg").attr("width", svgSize).attr("height", svgSize);
         test.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "blue");
 	var test2 = d3.select("#test2").append("svg").attr("width", svgSize).attr("height", svgSize);
         test2.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "green");
-    
-    //Map
+    // END legend code
+        
+    // START map code
 	var width = 600;
 	var height = 800;
-	
     
 	var projection = d3.geo.albers().scale(3300)
     .translate([width*2, height/2]);
 
-        
     var path = d3.geo.path().projection(projection);
      
 	var svg = d3.select("#map").append("svg")
 	.attr("width", width)
 	.attr("height", height);
-	
 
 	var calimap;
 	
@@ -110,6 +120,7 @@
 		svg.append("circle").attr("cx", losangelas[0]).attr("cy", losangelas[1]).attr("r", 2).attr("fill", "blue");
 
 	});
+    // END map code
 	</script>
 </body>
 
