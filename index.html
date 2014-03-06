@@ -21,11 +21,18 @@
     </div>
 
 	<script>
-    // START Key code with help from the man: mbostock http://bl.ocks.org/mbostock/4573883
-    var keyContainerWidth = 600;
+    // TODO: pull in income data for coloring map and creating key
+    var incomes;
+        
+    d3.json("median_income.json", function(data) {
+        incomes = data;
+    });
+        
+    // [START Key] with help from the man: mbostock http://bl.ocks.org/mbostock/4573883
+    var keyContainerWidth = 500;
     var keyContainerHeight = 100;
     var keyHeight = 10;
-    var keyBorder = 20;
+    var keyPadding = 20;
 
     var svg = d3.select("body").append("svg")
         .attr("class", "keyContainer")
@@ -37,30 +44,25 @@
         var addTheMoniez = d3.format("$");
         return addTheMoniez(Math.ceil(d/1000))+"K"
     }
-    
-    // TODO: Pull in income data to determine domain of key
         
-    // Threshold scale split up by US income brackets http://en.wikipedia.org/wiki/File:US_county_household_median_income_2012.png
+    // Threshold scale split up by US household income brackets http://en.wikipedia.org/wiki/File:US_county_household_median_income_2012.png
     var threshold = d3.scale.threshold()
         .domain([30000, 35000, 42000, 52000, 59000, 74000, 89605])
-        //.range(["#ffffcc","#d9f0a3","#addd8e","#78c679","#31a354","#006837"]);
         .range(["#ffffcc","#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#005a32"]);
-        //.range(["#ffffe5","#f7fcb9","#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#005a32"]);
     
     // Use min/max income to create a scale for the key
     var x = d3.scale.linear()
         .domain([30000, 89605])
-        .range([keyBorder, keyContainerWidth-keyBorder]);
+        .range([keyPadding, keyContainerWidth-keyPadding]);
     
     // Create key scaling income values with a linear scale, set tick marks with the threshold
     var xAxis = d3.svg.axis()
         .scale(x)
-        .orient("bottom")
         .tickSize(keyHeight)
         .tickValues(threshold.domain())
         .tickFormat(function(d) { return formatTicks(d); });
-        
-    // Append key elements
+
+    // Append rectangle elements to key
     var g = svg.append("g")
         .attr("class", "key")
         .attr("transform", "translate(0,40)");
@@ -84,17 +86,17 @@
         .attr("y", -10)
         .text("Some Descriptive Text");
         
-    // END key code
+    // [END key]
         
-    // START legend code
+    // [START legend]
     var svgSize = 30;
 	var test = d3.select("#test").append("svg").attr("width", svgSize).attr("height", svgSize);
         test.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "blue");
 	var test2 = d3.select("#test2").append("svg").attr("width", svgSize).attr("height", svgSize);
         test2.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "yellow");
-    // END legend code
+    // [END legend]
         
-    // START map code
+    // [START map]
 	var width = 600;
 	var height = 800;
     
@@ -128,7 +130,7 @@
 		svg.append("circle").attr("cx", losangelas[0]).attr("cy", losangelas[1]).attr("r", 2).attr("fill", "blue");
 
 	});
-    // END map code
+    // [END map]
 	</script>
 </body>
 

@@ -30,3 +30,7 @@ svg { border: solid black 1px; }
   stroke: #000;
   shape-rendering: crispEdges;
 }
+
+.tick {
+    font-size: 13px
+}
