@@ -129,6 +129,38 @@
 		// Place a big semi-transparent circle over Los Angelas.
 		svg.append("circle").attr("cx", losangelas[0]).attr("cy", losangelas[1]).attr("r", 2).attr("fill", "blue");
 
+		
+		// get median_incomes and plot them with the corresponding colors from the legend
+		d3.json("median_income.json", function(error, data) {
+			if (error) return console.warn(error);	
+				
+		});
+
+		// plot walmart locations on graph
+		d3.json("walmart/coords_walmart.json", function(error, data) {
+			if (error) return console.warn(error);
+			data.forEach(function (d) {
+				var walmart_loc = projection([d.lng,d.lat]);
+				svg.append("circle").attr("cx", walmart_loc[0])
+					.attr("cy", walmart_loc[1])
+					.attr("r", 2)
+					.attr("fill", "blue");
+			});
+		});
+
+		//plot whole foods locations on graphs
+		d3.json("walmart/coords_wholefoods.json", function(error, data) {
+			if (error) return console.warn(error);
+			data.forEach(function (d) {
+				var wholefoods_loc = projection([d.lng,d.lat]);
+				svg.append("circle").attr("cx", wholefoods_loc[0])
+					.attr("cy", wholefoods_loc[1])
+					.attr("r", 2)
+					.attr("fill", "green");
+				});
+		});
+	//#ffffcc","#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#005a32"]);
+
 	});
     // [END map]
 	</script>
