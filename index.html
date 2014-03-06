@@ -22,13 +22,15 @@
 
 	<script>
     // START Key code
-    var keyWidth = 400;
-    var keyHeight = 100;
+    var keyContainerWidth = 500;
+    var keyContainerHeight = 100;
+    var keyHeight = 8;
+    var keyBorder = 20;
 
     var svg = d3.select("body").append("svg")
         .attr("class", "keyContainer")
-        .attr("width", keyWidth)
-        .attr("height", keyHeight);
+        .attr("width", keyContainerWidth)
+        .attr("height", keyContainerHeight);
 
     // TODO: Need to reformat tick marks
     var format = d3.format("$");
@@ -37,21 +39,23 @@
         
     // Threshold scale split up by US income brackets http://en.wikipedia.org/wiki/File:US_county_household_median_income_2012.png
     var threshold = d3.scale.threshold()
-        .domain([35000, 42000, 52000, 59000, 74000])
-        .range(["#ffffcc","#d9f0a3","#addd8e","#78c679","#31a354","#006837"]);
+        .domain([30000, 35000, 42000, 52000, 59000, 74000, 89605])
+//        .range(["#ffffcc","#d9f0a3","#addd8e","#78c679","#31a354","#006837"]);
+        .range(["#ffffcc","#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#005a32"]);
+//        .range(["#ffffe5","#f7fcb9","#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#005a32"]);
     
     // Use min/max income to create a scale for the key
     var x = d3.scale.linear()
         .domain([30000, 89605])
-        .range([0, keyWidth]);
+        .range([keyBorder, keyContainerWidth-keyBorder]);
     
     // Create key scaling income values with a linear scale, color in and set tick marks with the threshold
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
-        .tickSize(20)
+        .tickSize(8)
         .tickValues(threshold.domain())
-        .tickFormat(function(d) { return format(d/1000)+"K"; });
+        .tickFormat(function(d) { return format(Math.floor(d/1000))+"K"; });
     
     // Append 
     var g = svg.append("g")
@@ -66,14 +70,14 @@
         }))
       .enter().append("rect")
         .attr("height", 8)
-        .attr("y", 10)
+        .attr("y", 0)
         .attr("x", function(d) { return x(d[0]); })
         .attr("width", function(d) { return x(d[1]) - x(d[0]); })
         .style("fill", function(d) { return threshold(d[0]); });
     
     g.call(xAxis).append("text")
         .attr("class", "caption")
-        .attr("y", 10)
+        .attr("y", 50)
         .text("US 2012 Income Brackets");
         
     // END key code
