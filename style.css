@@ -15,3 +15,16 @@
 }
 
 svg { border: solid black 1px; }
+
+.caption {
+  font-weight: bold;
+}
+
+.key path {
+  display: none;
+}
+
+.key line {
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
