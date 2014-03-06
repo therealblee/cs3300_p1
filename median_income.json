@@ -1,234 +1,234 @@
 [
     {
         "county": "Alameda County", 
-        "income": "$70,821"
+        "income": 70821
     }, 
     {
         "county": "Alpine County", 
-        "income": "$59,018"
+        "income": 59018
     }, 
     {
         "county": "Amador County", 
-        "income": "$56,180"
+        "income": 56180
     }, 
     {
         "county": "Butte County", 
-        "income": "$42,971"
+        "income": 42971
     }, 
     {
         "county": "Calaveras County", 
-        "income": "$55,256"
+        "income": 55256
     }, 
     {
         "county": "Colusa County", 
-        "income": "$49,558"
+        "income": 49558
     }, 
     {
         "county": "Contra Costa County", 
-        "income": "$79,135"
+        "income": 79135
     }, 
     {
         "county": "Del Norte County", 
-        "income": "$37,588"
+        "income": 37588
     }, 
     {
         "county": "El Dorado County", 
-        "income": "$68,815"
+        "income": 68815
     }, 
     {
         "county": "Fresno County", 
-        "income": "$46,903"
+        "income": 46903
     }, 
     {
         "county": "Glenn County", 
-        "income": "$43,239"
+        "income": 43239
     }, 
     {
         "county": "Humboldt County", 
-        "income": "$40,376"
+        "income": 40376
     }, 
     {
         "county": "Imperial County", 
-        "income": "$39,402"
+        "income": 39402
     }, 
     {
         "county": "Inyo County", 
-        "income": "$49,571"
+        "income": 49571
     }, 
     {
         "county": "Kern County", 
-        "income": "$48,021"
+        "income": 48021
     }, 
     {
         "county": "Kings County", 
-        "income": "$48,838"
+        "income": 48838
     }, 
     {
         "county": "Lake County", 
-        "income": "$39,525"
+        "income": 39525
     }, 
     {
         "county": "Lassen County", 
-        "income": "$52,484"
+        "income": 52484
     }, 
     {
         "county": "Los Angeles County", 
-        "income": "$56,266"
+        "income": 56266
     }, 
     {
         "county": "Madera County", 
-        "income": "$47,724"
+        "income": 47724
     }, 
     {
         "county": "Marin County", 
-        "income": "$89,605"
+        "income": 89605
     }, 
     {
         "county": "Mariposa County", 
-        "income": "$49,174"
+        "income": 49174
     }, 
     {
         "county": "Mendocino County", 
-        "income": "$44,527"
+        "income": 44527
     }, 
     {
         "county": "Merced County", 
-        "income": "$43,945"
+        "income": 43945
     }, 
     {
         "county": "Modoc County", 
-        "income": "$35,402"
+        "income": 35402
     }, 
     {
         "county": "Mono County", 
-        "income": "$60,469"
+        "income": 60469
     }, 
     {
         "county": "Monterey County", 
-        "income": "$59,737"
+        "income": 59737
     }, 
     {
         "county": "Napa County", 
-        "income": "$68,641"
+        "income": 68641
     }, 
     {
         "county": "Nevada County", 
-        "income": "$58,077"
+        "income": 58077
     }, 
     {
         "county": "Orange County", 
-        "income": "$75,762"
+        "income": 75762
     }, 
     {
         "county": "Placer County", 
-        "income": "$74,645"
+        "income": 74645
     }, 
     {
         "county": "Plumas County", 
-        "income": "$44,151"
+        "income": 44151
     }, 
     {
         "county": "Riverside County", 
-        "income": "$58,365"
+        "income": 58365
     }, 
     {
         "county": "Sacramento County", 
-        "income": "$56,553"
+        "income": 56553
     }, 
     {
         "county": "San Benito County", 
-        "income": "$65,570"
+        "income": 65570
     }, 
     {
         "county": "San Bernardino County", 
-        "income": "$55,853"
+        "income": 55853
     }, 
     {
         "county": "San Diego County", 
-        "income": "$63,857"
+        "income": 63857
     }, 
     {
         "county": "San Francisco County", 
-        "income": "$72,947"
+        "income": 72947
     }, 
     {
         "county": "San Joaquin County", 
-        "income": "$53,764"
+        "income": 53764
     }, 
     {
         "county": "San Luis Obispo County", 
-        "income": "$58,630"
+        "income": 58630
     }, 
     {
         "county": "San Mateo County", 
-        "income": "$87,633"
+        "income": 87633
     }, 
     {
         "county": "Santa Barbara County", 
-        "income": "$61,896"
+        "income": 61896
     }, 
     {
         "county": "Santa Clara County", 
-        "income": "$89,064"
+        "income": 89064
     }, 
     {
         "county": "Santa Cruz County", 
-        "income": "$66,030"
+        "income": 66030
     }, 
     {
         "county": "Shasta County", 
-        "income": "$44,058"
+        "income": 44058
     }, 
     {
         "county": "Sierra County", 
-        "income": "$50,308"
+        "income": 50308
     }, 
     {
         "county": "Siskiyou County", 
-        "income": "$37,865"
+        "income": 37865
     }, 
     {
         "county": "Solano County", 
-        "income": "$69,914"
+        "income": 69914
     }, 
     {
         "county": "Sonoma County", 
-        "income": "$64,343"
+        "income": 64343
     }, 
     {
         "county": "Stanislaus County", 
-        "income": "$50,671"
+        "income": 50671
     }, 
     {
         "county": "Sutter County", 
-        "income": "$50,010"
+        "income": 50010
     }, 
     {
         "county": "Tehama County", 
-        "income": "$38,753"
+        "income": 38753
     }, 
     {
         "county": "Trinity County", 
-        "income": "$37,672"
+        "income": 37672
     }, 
     {
         "county": "Tulare County", 
-        "income": "$43,550"
+        "income": 43550
     }, 
     {
         "county": "Tuolumne County", 
-        "income": "$47,359"
+        "income": 47359
     }, 
     {
         "county": "Ventura County", 
-        "income": "$76,728"
+        "income": 76728
     }, 
     {
         "county": "Yolo County", 
-        "income": "$57,920"
+        "income": 57920
     }, 
     {
         "county": "Yuba County", 
-        "income": "$46,617"
+        "income": 46617
     }
 ]
