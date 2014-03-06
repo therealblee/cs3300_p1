@@ -21,10 +21,10 @@
     </div>
 
 	<script>
-    // START Key code
-    var keyContainerWidth = 500;
+    // START Key code with help from the man: mbostock http://bl.ocks.org/mbostock/4573883
+    var keyContainerWidth = 600;
     var keyContainerHeight = 100;
-    var keyHeight = 8;
+    var keyHeight = 10;
     var keyBorder = 20;
 
     var svg = d3.select("body").append("svg")
@@ -32,34 +32,38 @@
         .attr("width", keyContainerWidth)
         .attr("height", keyContainerHeight);
 
-    // TODO: Need to reformat tick marks
-    var format = d3.format("$");
-        
+    // Reformat tick marks
+    var formatTicks = function(d){
+        var addTheMoniez = d3.format("$");
+        return addTheMoniez(Math.ceil(d/1000))+"K"
+    }
+    
     // TODO: Pull in income data to determine domain of key
         
     // Threshold scale split up by US income brackets http://en.wikipedia.org/wiki/File:US_county_household_median_income_2012.png
     var threshold = d3.scale.threshold()
         .domain([30000, 35000, 42000, 52000, 59000, 74000, 89605])
-//        .range(["#ffffcc","#d9f0a3","#addd8e","#78c679","#31a354","#006837"]);
+        //.range(["#ffffcc","#d9f0a3","#addd8e","#78c679","#31a354","#006837"]);
         .range(["#ffffcc","#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#005a32"]);
-//        .range(["#ffffe5","#f7fcb9","#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#005a32"]);
+        //.range(["#ffffe5","#f7fcb9","#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#005a32"]);
     
     // Use min/max income to create a scale for the key
     var x = d3.scale.linear()
         .domain([30000, 89605])
         .range([keyBorder, keyContainerWidth-keyBorder]);
     
-    // Create key scaling income values with a linear scale, color in and set tick marks with the threshold
+    // Create key scaling income values with a linear scale, set tick marks with the threshold
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
-        .tickSize(8)
+        .tickSize(keyHeight)
         .tickValues(threshold.domain())
-        .tickFormat(function(d) { return format(Math.floor(d/1000))+"K"; });
-    
-    // Append 
+        .tickFormat(function(d) { return formatTicks(d); });
+        
+    // Append key elements
     var g = svg.append("g")
         .attr("class", "key")
+        .attr("transform", "translate(0,40)");
     
     g.selectAll("rect")
         .data(threshold.range().map(function(color) {
@@ -69,16 +73,16 @@
           return d;
         }))
       .enter().append("rect")
-        .attr("height", 8)
-        .attr("y", 0)
+        .attr("height", keyHeight)
         .attr("x", function(d) { return x(d[0]); })
         .attr("width", function(d) { return x(d[1]) - x(d[0]); })
         .style("fill", function(d) { return threshold(d[0]); });
     
+    // Apply xAxis to the rectangles i.e. set tick marks and append a text heading to key
     g.call(xAxis).append("text")
         .attr("class", "caption")
-        .attr("y", 50)
-        .text("US 2012 Income Brackets");
+        .attr("y", -10)
+        .text("Some Descriptive Text");
         
     // END key code
         
@@ -87,7 +91,7 @@
 	var test = d3.select("#test").append("svg").attr("width", svgSize).attr("height", svgSize);
         test.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "blue");
 	var test2 = d3.select("#test2").append("svg").attr("width", svgSize).attr("height", svgSize);
-        test2.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "green");
+        test2.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "yellow");
     // END legend code
         
     // START map code
