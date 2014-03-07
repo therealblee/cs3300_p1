@@ -8,6 +8,7 @@ src: url(OpenSans-Light.ttf);
 
 body {
     font-family: Open Sans, Helvetica, sans-serif;
+    margin: 0;
 }
 #map {
     float: left;
@@ -18,11 +19,12 @@ body {
     float: left;
     position: absolute;
     left: 350px;
-    top: 100px;
+    top: 25px;*/
     font-size: 20px;
 }
 
 #legend td {
+    font-size: 20px;
 }
 
 .key path {
@@ -36,4 +38,12 @@ body {
 
 .tick {
     font-size: 13px
+}
+
+#description {
+    width: 600px;
+    height: 500px;
+    float: right;
+    overflow: auto;
+    margin-right: 50px;
 }

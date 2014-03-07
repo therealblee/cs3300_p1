@@ -19,8 +19,14 @@
             </tr>
         </table>
     </div>
-
-	<script>            
+    
+    <div id="description">
+        <h1>Walmarts, Whole Foods, and Incomes</h1>
+        <p>The graph portrays a map of California and its different counties. Each county is encoded with a different shade of green corresponding to its median income. In addition, the locations of every Whole Foods and Walmart store in the state is plotted. Our mission is to find a correlation between income and store locations.</p>
+        <p>Do companies conciously target different demographics based on income? We chose Walmart and Whole Foods because they provide similar products, but we believe that they each target a separate market segment. Our results are not conclusive, but there is strong evidence that connects Whole Foods locations more with the upper-middle class and Walmart with the middle and lower-middle classes.</p>
+    </div>
+	
+    <script>            
     // [START legend]
     var svgSize = 10;
 	var walmart = d3.select("#walmart").append("svg").attr("width", svgSize).attr("height", svgSize);
@@ -91,7 +97,7 @@
     g.call(xAxis).append("text")
         .attr("class", "caption")
         .attr("y", -10)
-        .text("United States Income Brackets 2012");
+        .text("U.S. Income Brackets 2012");
     // [END key]
                 
     // [START map]
