@@ -105,10 +105,10 @@
 	
 	// We can use our projection as a function. Remember that the format is 
 	//  longitude first, then latitude (ie x, then y)
-	var losangelas = projection([-117.9095329, 34.1027076]);
 	
 	d3.json("ca-counties.json", function (error, ca) {
 		calimap = ca;
+			
 		svg.append("g")
 		.selectAll("path")
 		.data(topojson.feature(ca, ca.objects.counties).features)
@@ -125,13 +125,36 @@
         d3.json("median_income.json", function(incomes) {
             var brackets = threshold.domain();
             var colors = threshold.range();
-            d3.selectAll(".county").style("fill", function(county) {
-                var countyName = county.properties.name;
-                
-            });
+//            d3.selectAll(".county").style("fill", function(county) {
+//                var countyName = county.properties.name;                
+//            });
         });        
         
         // [END map filling]
+		
+		// plot walmart locations on graph
+		d3.json("walmart/coords_walmart.json", function(error, data) {
+			if (error) return console.warn(error);
+			data.forEach(function (d) {
+				var walmart_loc = projection([d.lng,d.lat]);
+				svg.append("circle").attr("cx", walmart_loc[0])
+					.attr("cy", walmart_loc[1])
+					.attr("r", 2)
+					.attr("fill", "blue");
+			});
+		});
+
+		//plot whole foods locations on graphs
+		d3.json("walmart/coords_wholefoods.json", function(error, data) {
+			if (error) return console.warn(error);
+			data.forEach(function (d) {
+				var wholefoods_loc = projection([d.lng,d.lat]);
+				svg.append("circle").attr("cx", wholefoods_loc[0])
+					.attr("cy", wholefoods_loc[1])
+					.attr("r", 2)
+					.attr("fill", "green");
+				});
+		});
 
 		//svg.append("circle").attr("cx", losangelas[0]).attr("cy", losangelas[1]).attr("r", 2).attr("fill", "blue");
 	});
