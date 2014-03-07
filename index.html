@@ -109,7 +109,7 @@
 
 	var calimap;
 	
-	d3.json("geojson/ca-counties.json", function (error, ca) {
+	d3.json("json/ca-counties.json", function (error, ca) {
 		calimap = ca;
 			
 		svg.append("g")
@@ -122,7 +122,7 @@
         .style("stroke-width", .5)
         
         // [START map filling]
-            d3.json("income/median_income.json", function(incomes) {
+            d3.json("json/median_income.json", function(incomes) {
             var brackets = threshold.domain();
             var colors = threshold.range();
             d3.selectAll(".county").style("fill", function(county) {
@@ -135,7 +135,7 @@
         });
         
 		// plot walmart locations on graph
-		d3.json("stores/coords_walmart.json", function(error, data) {
+		d3.json("json/coords_walmart.json", function(error, data) {
 			if (error) return console.warn(error);
 			data.forEach(function (d) {
 				var walmart_loc = projection([d.lng,d.lat]);
@@ -147,7 +147,7 @@
 		});
 
 		//plot whole foods locations on graphs
-		d3.json("stores/coords_wholefoods.json", function(error, data) {
+		d3.json("json/coords_wholefoods.json", function(error, data) {
 			if (error) return console.warn(error);
 			data.forEach(function (d) {
 				var wholefoods_loc = projection([d.lng,d.lat]);
