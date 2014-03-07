@@ -1,22 +1,26 @@
+@font-face
+{
+font-family: Open Sans;
+src: url(OpenSans-Light.ttf);
+}
+
+* {
+    border: solid black 1px;
+}
 body {
-    font-family: Helvetica, sans-serif
+    font-family: Open Sans, Helvetica, sans-serif;
 }
 #map {
-    border: 1px solid black;
     float: left;
 }
 
 #legend {
-    border: 1px solid black;
     float: left;
-    margin: 30px;
 }
 
 #legend td {
     font-size: 30px;
 }
-
-svg { border: solid black 1px; }
 
 .caption {
   font-weight: bold;

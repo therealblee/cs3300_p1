@@ -13,18 +13,20 @@ def median_incomes():
 	each_row = first_table.find_all('td')
 
 	data = []
+	data2 = {}
 	num_entries = 58
 
 	# first td = name, third td = household median income
 	for n in range(0,num_entries):
 		county = each_row[n*5].getText() + ' County'
-		med_income = each_row[n*5+3].getText()
+		income = each_row[n*5+3].getText()
+		print county
 		# remove dollar sign and commas from median income
-		med_income = remove(med_income)
-		info = {'county': county, 'income': med_income}
-		data.append(info)
-	
-	return data
+		income = remove(income)
+		data2.update({county:income})
+		print data2
+#	print data2
+	return data2
 
 def remove(income):
 	# remove dollar sign
@@ -38,13 +40,13 @@ incomes = median_incomes()
 f = open('median_income.json','w')
 json.dump(incomes,f,indent=4)
 
-largest = 0
-smallest = sys.maxint
-for n in incomes:
-	if largest < n['income']:
-		largest = n['income']
-	if smallest > n['income']:
-		smallest = n['income']
-
-print "Smallest: " + str(smallest)
-print "Largest: " + str(largest)
+#largest = 0
+#smallest = sys.maxint
+#for n in incomes:
+#	if largest < n['county']:
+#		largest = n['county']
+#	if smallest > n['county']:
+#		smallest = n['county']
+#
+#print "Smallest: " + str(smallest)
+#print "Largest: " + str(largest)

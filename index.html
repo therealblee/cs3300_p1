@@ -3,7 +3,7 @@
 	<script src="http://d3js.org/d3.v3.min.js"></script>
 	<!-- This library supports geographic data -->
 	<script src="http://d3js.org/topojson.v1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" media="screen" />
 </head>
 <body>
 	<!-- Leave a target where we'll add a map of the world -->
@@ -12,15 +12,23 @@
     <div id="legend">
         <table>
             <tr>
-                <td id="test"></td><td>Walmarts</td>
+                <td id="walmart"></td><td>Walmarts</td>
             </tr>
             <tr>
-                <td id="test2"></td><td>Whole Foods</td>
+                <td id="wholefoods"></td><td>Whole Foods</td>
             </tr>
         </table>
     </div>
 
 	<script>            
+    // [START legend]
+    var svgSize = 15;
+	var test = d3.select("#walmart").append("svg").attr("width", svgSize).attr("height", svgSize);
+        test.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "blue");
+	var test2 = d3.select("#wholefoods").append("svg").attr("width", svgSize).attr("height", svgSize);
+        test2.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "yellow");
+    // [END legend]
+
     // [START Key] with help from the man: mbostock http://bl.ocks.org/mbostock/4573883
     var keyContainerWidth = 500;
     var keyContainerHeight = 100;
@@ -79,21 +87,13 @@
         .text("Some Descriptive Text");
         
     // [END key]
-        
-    // [START legend]
-    var svgSize = 30;
-	var test = d3.select("#test").append("svg").attr("width", svgSize).attr("height", svgSize);
-        test.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "blue");
-	var test2 = d3.select("#test2").append("svg").attr("width", svgSize).attr("height", svgSize);
-        test2.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "yellow");
-    // [END legend]
-        
+                
     // [START map]
-	var width = 600;
+	var width = 460;
 	var height = 800;
     
-	var projection = d3.geo.albers().scale(3300)
-    .translate([width*2, height/2]);
+	var projection = d3.geo.albers().scale(4100)
+    .translate([width+1020, height/2+70]);
 
     var path = d3.geo.path().projection(projection);
      
@@ -102,9 +102,6 @@
 	.attr("height", height);
 
 	var calimap;
-	
-	// We can use our projection as a function. Remember that the format is 
-	//  longitude first, then latitude (ie x, then y)
 	
 	d3.json("ca-counties.json", function (error, ca) {
 		calimap = ca;
@@ -116,8 +113,6 @@
 		.attr("d", path)
         .attr("class", "county")
 		.style("stroke", "#888888")
-		// Make Orange County appear Cornell red.
-		.style("fill", function (county) { if (county.id == 06059) {  return "#ff0000"; } else { return "#cccccc"; }})
         
         // [START map filling]
     
@@ -125,11 +120,15 @@
         d3.json("median_income.json", function(incomes) {
             var brackets = threshold.domain();
             var colors = threshold.range();
-//            d3.selectAll(".county").style("fill", function(county) {
-//                var countyName = county.properties.name;                
-//            });
+            d3.selectAll(".county").style("fill", function(county) {
+                var countyName = county.properties.name;
+                for (var i = brackets.length-1; i >= 0; i--) {
+                    if (incomes[countyName] > brackets[i])
+                        return colors[i+1];
+                }
+            });
         });        
-        
+
         // [END map filling]
 		
 		// plot walmart locations on graph
@@ -152,7 +151,7 @@
 				svg.append("circle").attr("cx", wholefoods_loc[0])
 					.attr("cy", wholefoods_loc[1])
 					.attr("r", 2)
-					.attr("fill", "green");
+					.attr("fill", "yellow");
 				});
 		});
 

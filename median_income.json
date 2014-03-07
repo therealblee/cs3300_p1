@@ -1,234 +1,60 @@
-[
-    {
-        "county": "Alameda County", 
-        "income": 70821
-    }, 
-    {
-        "county": "Alpine County", 
-        "income": 59018
-    }, 
-    {
-        "county": "Amador County", 
-        "income": 56180
-    }, 
-    {
-        "county": "Butte County", 
-        "income": 42971
-    }, 
-    {
-        "county": "Calaveras County", 
-        "income": 55256
-    }, 
-    {
-        "county": "Colusa County", 
-        "income": 49558
-    }, 
-    {
-        "county": "Contra Costa County", 
-        "income": 79135
-    }, 
-    {
-        "county": "Del Norte County", 
-        "income": 37588
-    }, 
-    {
-        "county": "El Dorado County", 
-        "income": 68815
-    }, 
-    {
-        "county": "Fresno County", 
-        "income": 46903
-    }, 
-    {
-        "county": "Glenn County", 
-        "income": 43239
-    }, 
-    {
-        "county": "Humboldt County", 
-        "income": 40376
-    }, 
-    {
-        "county": "Imperial County", 
-        "income": 39402
-    }, 
-    {
-        "county": "Inyo County", 
-        "income": 49571
-    }, 
-    {
-        "county": "Kern County", 
-        "income": 48021
-    }, 
-    {
-        "county": "Kings County", 
-        "income": 48838
-    }, 
-    {
-        "county": "Lake County", 
-        "income": 39525
-    }, 
-    {
-        "county": "Lassen County", 
-        "income": 52484
-    }, 
-    {
-        "county": "Los Angeles County", 
-        "income": 56266
-    }, 
-    {
-        "county": "Madera County", 
-        "income": 47724
-    }, 
-    {
-        "county": "Marin County", 
-        "income": 89605
-    }, 
-    {
-        "county": "Mariposa County", 
-        "income": 49174
-    }, 
-    {
-        "county": "Mendocino County", 
-        "income": 44527
-    }, 
-    {
-        "county": "Merced County", 
-        "income": 43945
-    }, 
-    {
-        "county": "Modoc County", 
-        "income": 35402
-    }, 
-    {
-        "county": "Mono County", 
-        "income": 60469
-    }, 
-    {
-        "county": "Monterey County", 
-        "income": 59737
-    }, 
-    {
-        "county": "Napa County", 
-        "income": 68641
-    }, 
-    {
-        "county": "Nevada County", 
-        "income": 58077
-    }, 
-    {
-        "county": "Orange County", 
-        "income": 75762
-    }, 
-    {
-        "county": "Placer County", 
-        "income": 74645
-    }, 
-    {
-        "county": "Plumas County", 
-        "income": 44151
-    }, 
-    {
-        "county": "Riverside County", 
-        "income": 58365
-    }, 
-    {
-        "county": "Sacramento County", 
-        "income": 56553
-    }, 
-    {
-        "county": "San Benito County", 
-        "income": 65570
-    }, 
-    {
-        "county": "San Bernardino County", 
-        "income": 55853
-    }, 
-    {
-        "county": "San Diego County", 
-        "income": 63857
-    }, 
-    {
-        "county": "San Francisco County", 
-        "income": 72947
-    }, 
-    {
-        "county": "San Joaquin County", 
-        "income": 53764
-    }, 
-    {
-        "county": "San Luis Obispo County", 
-        "income": 58630
-    }, 
-    {
-        "county": "San Mateo County", 
-        "income": 87633
-    }, 
-    {
-        "county": "Santa Barbara County", 
-        "income": 61896
-    }, 
-    {
-        "county": "Santa Clara County", 
-        "income": 89064
-    }, 
-    {
-        "county": "Santa Cruz County", 
-        "income": 66030
-    }, 
-    {
-        "county": "Shasta County", 
-        "income": 44058
-    }, 
-    {
-        "county": "Sierra County", 
-        "income": 50308
-    }, 
-    {
-        "county": "Siskiyou County", 
-        "income": 37865
-    }, 
-    {
-        "county": "Solano County", 
-        "income": 69914
-    }, 
-    {
-        "county": "Sonoma County", 
-        "income": 64343
-    }, 
-    {
-        "county": "Stanislaus County", 
-        "income": 50671
-    }, 
-    {
-        "county": "Sutter County", 
-        "income": 50010
-    }, 
-    {
-        "county": "Tehama County", 
-        "income": 38753
-    }, 
-    {
-        "county": "Trinity County", 
-        "income": 37672
-    }, 
-    {
-        "county": "Tulare County", 
-        "income": 43550
-    }, 
-    {
-        "county": "Tuolumne County", 
-        "income": 47359
-    }, 
-    {
-        "county": "Ventura County", 
-        "income": 76728
-    }, 
-    {
-        "county": "Yolo County", 
-        "income": 57920
-    }, 
-    {
-        "county": "Yuba County", 
-        "income": 46617
-    }
-]
+{
+    "Humboldt County": 40376, 
+    "Sonoma County": 64343, 
+    "San Luis Obispo County": 58630, 
+    "Glenn County": 43239, 
+    "Tehama County": 38753, 
+    "Nevada County": 58077, 
+    "Yolo County": 57920, 
+    "Sacramento County": 56553, 
+    "Fresno County": 46903, 
+    "Calaveras County": 55256, 
+    "Lassen County": 52484, 
+    "Marin County": 89605, 
+    "Contra Costa County": 79135, 
+    "Yuba County": 46617, 
+    "Del Norte County": 37588, 
+    "San Mateo County": 87633, 
+    "Mono County": 60469, 
+    "Merced County": 43945, 
+    "Santa Cruz County": 66030, 
+    "Ventura County": 76728, 
+    "Placer County": 74645, 
+    "Inyo County": 49571, 
+    "Stanislaus County": 50671, 
+    "Orange County": 75762, 
+    "Alpine County": 59018, 
+    "San Francisco County": 72947, 
+    "Imperial County": 39402, 
+    "Kings County": 48838, 
+    "Mariposa County": 49174, 
+    "San Benito County": 65570, 
+    "Lake County": 39525, 
+    "El Dorado County": 68815, 
+    "Solano County": 69914, 
+    "Los Angeles County": 56266, 
+    "San Diego County": 63857, 
+    "Alameda County": 70821, 
+    "Colusa County": 49558, 
+    "Sierra County": 50308, 
+    "Madera County": 47724, 
+    "Modoc County": 35402, 
+    "Amador County": 56180, 
+    "Trinity County": 37672, 
+    "Siskiyou County": 37865, 
+    "Riverside County": 58365, 
+    "San Joaquin County": 53764, 
+    "San Bernardino County": 55853, 
+    "Santa Clara County": 89064, 
+    "Tulare County": 43550, 
+    "Shasta County": 44058, 
+    "Santa Barbara County": 61896, 
+    "Monterey County": 59737, 
+    "Tuolumne County": 47359, 
+    "Sutter County": 50010, 
+    "Butte County": 42971, 
+    "Kern County": 48021, 
+    "Napa County": 68641, 
+    "Mendocino County": 44527, 
+    "Plumas County": 44151
+}
