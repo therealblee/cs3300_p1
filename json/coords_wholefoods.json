@@ -180,11 +180,6 @@
       "address":"18700 Ventura Blvd,Tarzana  California  91356"
    },
    {
-      "lat":39.4690739,
-      "lng":-119.7868638,
-      "address":"6139 S. Virginia Street,Reno  Nevada  89502"
-   },
-   {
       "lat":37.90243299999999,
       "lng":-122.525693,
       "address":"731 East Blithedale,Mill Valley  California  94941"
@@ -340,24 +335,9 @@
       "address":"2847 Park Avenue,Tustin  California  92782"
    },
    {
-      "lat":36.1578229,
-      "lng":-115.2893441,
-      "address":"8855 West Charleston Blvd.,Las Vegas  Nevada  89117"
-   },
-   {
-      "lat":36.1970917,
-      "lng":-115.250169,
-      "address":"7250 W. Lake Mead Blvd.,Las Vegas  Nevada  89128"
-   },
-   {
       "lat":33.6165418,
       "lng":-117.873653,
       "address":"415 Newport Center Drive,Newport Beach  California  92660"
-   },
-   {
-      "lat":36.0675243,
-      "lng":-115.1742848,
-      "address":"6689 Las Vegas Blvd.,Las Vegas  Nevada  89119"
    },
    {
       "lat":33.543902,
