@@ -114,29 +114,29 @@
 		.data(topojson.feature(ca, ca.objects.counties).features)
 		.enter().append("path")
 		.attr("d", path)
+        .attr("class", "county")
 		.style("stroke", "#888888")
 		// Make Orange County appear Cornell red.
-		.style("fill", function (county) { if (county.id == 06059) {  return "#ff0000"; } else { return "#cccccc"; }});
-		
-		// Place a big semi-transparent circle over Los Angelas.
-		svg.append("circle").attr("cx", losangelas[0]).attr("cy", losangelas[1]).attr("r", 2).attr("fill", "blue");
+		.style("fill", function (county) { if (county.id == 06059) {  return "#ff0000"; } else { return "#cccccc"; }})
+        
+        // [START map filling]
+    
+        // TODO: pull in income data for coloring map
+        d3.json("median_income.json", function(incomes) {
+            var brackets = threshold.domain();
+            var colors = threshold.range();
+            d3.selectAll(".county").style("fill", function(county) {
+                var countyName = county.properties.name;
+                
+            });
+        });        
+        
+        // [END map filling]
 
+		//svg.append("circle").attr("cx", losangelas[0]).attr("cy", losangelas[1]).attr("r", 2).attr("fill", "blue");
 	});
     // [END map]
     
-    // [START map filling]
-    
-    // TODO: pull in income data for coloring map
-    d3.json("median_income.json", function(error, incomes) {
-        var brackets = threshold.domain();
-        var colors = threshold.range();
-        
-        incomes.forEach(function(county) {
-            console.log(county);
-        });
-    });
-        
-    // [END map filling]
 	</script>
 </body>
 
