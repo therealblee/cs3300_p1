@@ -22,38 +22,45 @@
 
 	<script>            
     // [START legend]
-    var svgSize = 15;
-	var test = d3.select("#walmart").append("svg").attr("width", svgSize).attr("height", svgSize);
-        test.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "blue");
-	var test2 = d3.select("#wholefoods").append("svg").attr("width", svgSize).attr("height", svgSize);
-        test2.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "yellow");
+    var svgSize = 10;
+	var walmart = d3.select("#walmart").append("svg").attr("width", svgSize).attr("height", svgSize);
+        walmart.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "blue");
+	var wholefoods = d3.select("#wholefoods").append("svg").attr("width", svgSize).attr("height", svgSize);
+        wholefoods.append("circle").attr("cx", svgSize/2).attr("cy", svgSize/2).attr("r", svgSize/2).attr("fill", "yellow");
     // [END legend]
 
     // [START Key] with help from the man: mbostock http://bl.ocks.org/mbostock/4573883
-    var keyContainerWidth = 500;
+    var keyContainerWidth = 400;
     var keyContainerHeight = 100;
     var keyHeight = 10;
-    var keyPadding = 20;
 
-    var svg = d3.select("body").append("svg")
-        .attr("class", "keyContainer")
+    var svg = d3.select("#legend").append("svg")
         .attr("width", keyContainerWidth)
         .attr("height", keyContainerHeight);
 
     // Reformat tick marks
     var formatTicks = function(d){
         var addTheMoniez = d3.format("$");
-        return addTheMoniez(Math.ceil(d/1000))+"K"
+        if (d <= 35000) {
+            return "<"+addTheMoniez(Math.ceil(d/1000))+"K";
+        }
+        if (d < 74000) {
+            return addTheMoniez(Math.ceil(d/1000))+"K";
+        }
+        // Highest income bracket in US
+        else {
+            return addTheMoniez(Math.ceil(d/1000))+"K<";
+        }
     }
         
     // Threshold scale split up by US household income brackets http://en.wikipedia.org/wiki/File:US_county_household_median_income_2012.png
     var threshold = d3.scale.threshold()
-        .domain([30000, 35000, 42000, 52000, 59000, 74000, 89605])
-        .range(["#ffffcc","#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#005a32"]);
+        .domain([35000, 42000, 52000, 59000, 74000])
+        .range(["#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#005a32"]);
     
     var x = d3.scale.linear()
         .domain([30000, 89605]) // domain from the income data
-        .range([keyPadding, keyContainerWidth-keyPadding]);
+        .range([0, keyContainerWidth]);
     
     // Create key scaling income values with a linear scale, set tick marks with the threshold
     var xAxis = d3.svg.axis()
@@ -84,8 +91,7 @@
     g.call(xAxis).append("text")
         .attr("class", "caption")
         .attr("y", -10)
-        .text("Some Descriptive Text");
-        
+        .text("United States Income Brackets 2012");
     // [END key]
                 
     // [START map]
@@ -112,12 +118,11 @@
 		.enter().append("path")
 		.attr("d", path)
         .attr("class", "county")
-		.style("stroke", "#888888")
+		.style("stroke", "black")
+        .style("stroke-width", .5)
         
         // [START map filling]
-    
-        // TODO: pull in income data for coloring map
-        d3.json("median_income.json", function(incomes) {
+            d3.json("median_income.json", function(incomes) {
             var brackets = threshold.domain();
             var colors = threshold.range();
             d3.selectAll(".county").style("fill", function(county) {
@@ -127,10 +132,8 @@
                         return colors[i+1];
                 }
             });
-        });        
-
-        // [END map filling]
-		
+        });
+        
 		// plot walmart locations on graph
 		d3.json("walmart/coords_walmart.json", function(error, data) {
 			if (error) return console.warn(error);
@@ -154,8 +157,7 @@
 					.attr("fill", "yellow");
 				});
 		});
-
-		//svg.append("circle").attr("cx", losangelas[0]).attr("cy", losangelas[1]).attr("r", 2).attr("fill", "blue");
+        // [END map filling]
 	});
     // [END map]
     

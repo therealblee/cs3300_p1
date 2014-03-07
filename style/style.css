@@ -4,35 +4,34 @@ font-family: Open Sans;
 src: url(OpenSans-Light.ttf);
 }
 
-* {
-    border: solid black 1px;
-}
+/** {border: solid black 1px;}*/
+
 body {
     font-family: Open Sans, Helvetica, sans-serif;
 }
 #map {
     float: left;
+    margin-left: 50px;
 }
 
 #legend {
     float: left;
+    position: absolute;
+    left: 350px;
+    top: 100px;
+    font-size: 20px;
 }
 
 #legend td {
-    font-size: 30px;
-}
-
-.caption {
-  font-weight: bold;
 }
 
 .key path {
-  display: none;
+    display: none;
 }
 
 .key line {
-  stroke: #000;
-  shape-rendering: crispEdges;
+    stroke: #000;
+    shape-rendering: crispEdges;
 }
 
 .tick {
